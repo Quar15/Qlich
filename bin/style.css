@@ -23,6 +23,73 @@ body{
     margin: auto;
 }
 
+.main-menu{
+    margin: auto;
+    height: 470px;
+    width: 350px;
+    background-color: #2C3C4D;
+    border-radius: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-menu .my-button{
+    width: 90px;
+    height: 130px;
+    border-radius: 13px;
+    margin: 1px;
+    text-align: center;
+}
+
+.main-menu .my-button a{
+    color: #eee;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.main-menu .my-button .image{
+    height: 90px;
+    background-color: #5B6570;
+    border-radius: 13px;
+    margin-bottom: 7px;
+}
+
+.main-menu .my-button .image img{
+    margin: 5%;
+    height: 90%;
+}
+
+.main-menu .my-button:hover .image{
+    background-color: #793044;
+    cursor: pointer;
+}
+
+.my-button .image.music{
+    background-color: #5833A6;
+}
+
+.my-button:hover .image.music{
+    background-color: #724EBF;
+}
+
+.my-button .image.chat{
+    background-color: #37a633;
+}
+
+.my-button:hover .image.chat{
+    background-color: #4ebf54;
+}
+
+.my-button .image.album{
+    background-color: #F57C00;
+}
+
+.my-button:hover .image.album{
+    background-color: #F2AA52;
+}
+
 .welcome-header{
     margin-left: 20px;
 }
@@ -223,7 +290,7 @@ body{
     }
 }
 
-.wrapper-chat{
+.wrapper-middle{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -273,4 +340,31 @@ body{
 
 .send-message{
     flex: 1;
+}
+
+.album-box{
+    min-height: 400px;
+    width: 500px;
+    background-color: #5B6570;
+    border-radius: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.album-box .image{
+    background-color: #793044;
+    border-radius: 13px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.album-box .image img{
+    height: 100px;
+}
+
+.album-box .image:hover{
+    cursor: pointer;
+    background-color: #F23054;
 }
