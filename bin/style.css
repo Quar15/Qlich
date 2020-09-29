@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-height: 100vh;
+    background-color: #263341;
+    color: #5B6570;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.line{
+    position: absolute;
+    width: 4px;
+    height: 100vh;
+    background-color: #F23054;
+}
+
+.wrapper{
+    width: 360px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.welcome-header{
+    margin-left: 20px;
+}
+
+.welcome-header .nick{
+    color: aliceblue;
+}
+
+.content .category{
+    display: flex;
+}
+
+.content .category h2{
+    display: block;
+    height: 50px;
+    margin: 20px 20px 0px 20px;
+}
+.content .category h2:hover, .content .category h2:active{
+    color: #F23054;
+    cursor: pointer;
+}
+
+.content .browser{
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content .stationbtn{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: 1px solid #5B6570;
+    border-radius: 13px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.content .stationbtn:hover, .content .stationbtn:active{
+    background-color: #793044;
+    cursor: pointer;
+    color: white;
+}
+
+.stationbtn .main-line{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stationbtn .main-line div img{
+    height: 40px;
+    width: 40px;
+}
+
+.stationbtn h2{
+    color: #fff;
+}
+
+.stationbtn h3{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.stationbtn .visualizer{
+    margin: 30px 0 0 15px;
+}
+
+.bar{
+    width: 6px;
+    height: 40px;
+    background-color: #F23054;
+    display: inline-block;
+    border-radius: 13px;
+    transform-origin: bottom center;
+    animation: visualizing 3s ease-in-out infinite;
+}
+
+.bar1{
+    animation-delay: 0.1s;
+}
+.bar2{
+    animation-delay: 0.2s;
+}
+.bar3{
+    animation-delay: 0.3s;
+}
+.bar4{
+    animation-delay: 0.4s;
+}
+.bar5{
+    animation-delay: 0.5s;
+}
+.bar6{
+    animation-delay: 0.6s;
+}
+.bar7{
+    animation-delay: 0.7s;
+}
+
+.footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.footer .audio{
+    margin: 10px auto 30px auto;
+}
+
+.audio img{
+    height: 30px;
+    width: 30px;
+    vertical-align: -10px;
+    margin: 0px 10px;
+}
+
+.audio .audio-range{
+    height: 3px;
+    width: 300px;
+    -webkit-appearance: none;
+    background: #2C3C4D;
+    outline: none;
+    border-radius: 15px;
+}
+
+.audio .audio-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #F23054;
+    cursor: pointer;
+}
+
+.footer .btn-menu{
+    width: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-menu .my-button:hover{
+    cursor: pointer;
+}
+
+.btn-menu .play, .btn-menu .back, .btn-menu .next{
+    border-radius: 20px;
+    transform: rotate(45deg);
+}
+
+.btn-menu img{
+    transform: rotate(-45deg);
+    margin: 2px;
+    height: 50px;
+    width: 50px;
+}
+
+.btn-menu .play img{
+    margin: 7px;
+}
+
+.btn-menu .play{
+    height: 60px;
+    width: 60px;
+    background-color: #F23054;
+}
+
+.btn-menu .play:hover{
+    background-color: #793044;
+}
+
+.btn-menu .back, .btn-menu .next{
+    background-color: azure;
+    height: 50px;
+    width: 50px;
+}
+
+.btn-menu .back:hover, .btn-menu .next:hover{
+    background-color: #5B6570;
+}
+
+@keyframes visualizing{
+    0%{
+        transform: scaleY(0.1);
+        background-color: #793044;
+    }
+    50%{
+        transform: scaleY(1);
+        background-color: #F23054;
+    }
+    100%{
+        transform: scaleY(0.1);
+        background-color: transparent;
+    }
+}
+
+.wrapper-chat{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+}
+
+.info{
+    color: #acbcc0;
+    margin: 10px;
+    text-align: center;
+}
+
+.message{
+    background-color: #5B6570;
+    border-radius: 13px;
+    padding: 10px;
+    color: #eee;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.my-message{
+    text-align: right;
+}
+
+.other-message{
+    background-color: #F23054;
+}
+
+.send-box{
+    display: flex;
+}
+
+#message-input{
+    margin: 20px 10px;
+    padding: 7px 20px;
+    border-radius: 13px;
+    border: none;
+    height: 30px;
+    flex: 3;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.send-message{
+    flex: 1;
+}
