@@ -98,18 +98,37 @@ body{
     color: aliceblue;
 }
 
-.content .category{
+.content .categories{
     display: flex;
 }
 
-.content .category h2{
+.content .categories h2{
     display: block;
     height: 50px;
     margin: 20px 20px 0px 20px;
 }
-.content .category h2:hover, .content .category h2:active{
+
+.content .categories .category{
+    display: flex;
+    flex-flow: column;
+}
+
+.content .categories .dot{
+    display: block;
+    background-color: #F23054;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: -12px 53% 10px 47%;
+}
+
+.content .categories h2:hover, .content .categories h2:active{
     color: #F23054;
     cursor: pointer;
+}
+
+.content .categories .category.active{
+    color: #F23054;
 }
 
 .content .browser{
