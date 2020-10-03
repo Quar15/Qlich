@@ -1,1 +1,1 @@
-# Qlitch - web
+# Qlitch web
