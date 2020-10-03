@@ -90,6 +90,39 @@ body{
     background-color: #F2AA52;
 }
 
+.my-button .image.logout{
+    background-color: #D90404;
+}
+
+.my-button:hover .image.logout{
+    background-color: #F24141;
+}
+
+.my-button .image.settings{
+    background-color: #0F1D75;
+}
+
+.my-button:hover .image.settings{
+    background-color: #0a1fa3;
+}
+
+.my-button .image.spacer{
+    background-color: #2C3C4D;
+}
+
+.my-button:hover .image.spacer{
+    background-color: #2C3C4D;
+    cursor: default;
+}
+
+.my-button .image.todolist{
+    background-color: #2E97F2;
+}
+
+.my-button:hover .image.todolist{
+    background-color: #2ECEF2;
+}
+
 .welcome-header{
     margin-left: 20px;
 }
