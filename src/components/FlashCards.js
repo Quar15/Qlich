@@ -95,7 +95,7 @@ export class FlashCards extends Component {
                                 <p>{this.state.words[this.state.wordIndex][0]}</p>
                             </div>
                             <div className="back line-border">
-                                <h2>Polish</h2>
+                                <h2>Polski</h2>
                                 <p>{this.state.words[this.state.wordIndex][1]}</p>
                             </div>
                         </div>
