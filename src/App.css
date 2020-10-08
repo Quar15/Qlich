@@ -162,6 +162,14 @@ body{
   background-color: #cfc373;
 }
 
+.my-button .image.sudoku{
+  background-color: #111414;
+}
+
+.my-button:hover .image.sudoku{
+  background-color: #272E2D;
+}
+
 .welcome-header{
   margin-left: 20px;
 }

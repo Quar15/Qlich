@@ -39,8 +39,8 @@ export class MainMenu extends Component {
                             <p>ToDo</p>
                         </button>            
                         <button className="my-button" onClick={e => this.changePage(5)}>
-                            <div className="image"><img src="" alt=""/></div>
-                            <p></p>
+                            <div className="image sudoku"><img src="./img/sudoku.png" alt=""/></div>
+                            <p>Sudoku</p>
                         </button>           
                         <button className="my-button" onClick={e => this.changePage(6)}>
                             <div className="image flashcards"><img src="./img/translate.png" alt=""/></div>
