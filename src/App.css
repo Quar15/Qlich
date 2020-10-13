@@ -553,3 +553,12 @@ body{
 .flash-card:hover .back{
   transform: perspective(600px) rotateY(0deg);
 }
+
+.album .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album .column{
+  flex: 25%;
+}
