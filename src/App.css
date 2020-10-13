@@ -513,7 +513,7 @@ body{
   font-size: 25px;
 }
 
-.front,.back{
+.card .front,.card .back{
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -527,16 +527,16 @@ body{
   justify-content: center;
 }
 
-.front h2, .back h2{
+.card .front h2,.card .back h2{
   margin: -50px 0 30px;
 }
 
-.front{
+.card .front{
   background: #263341;
   transform: perspective(600px) rotateY(0deg);
 }
 
-.back{
+.card .back{
   background: #263341;
   transform: perspective(600px) rotateY(180deg);
 }
