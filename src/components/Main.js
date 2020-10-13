@@ -43,13 +43,13 @@ export class Main extends Component {
                 return <Chat returnHome = {this.returnHome}/>
 
             case 3:
-                return <WorkInProgress returnHome = {this.returnHome}/>
+                return <Album returnHome = {this.returnHome}/>
 
             case 4:
-                return <WorkInProgress returnHome = {this.returnHome}/>
+                return <ToDo returnHome = {this.returnHome}/>
     
             case 5:
-                return <WorkInProgress returnHome = {this.returnHome}/>
+                return <Sudoku returnHome = {this.returnHome}/>
     
             case 6:
                 return <FlashCards returnHome = {this.returnHome}/>
