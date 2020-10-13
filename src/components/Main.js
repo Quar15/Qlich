@@ -7,6 +7,7 @@ import Album from "./Album";
 import FlashCards from './FlashCards';
 import ToDo from "./ToDo";
 import Sudoku from "./Sudoku";
+import WorkInProgress from "./WorkInProgress";
 
 export class Main extends Component {
 
@@ -42,19 +43,19 @@ export class Main extends Component {
                 return <Chat returnHome = {this.returnHome}/>
 
             case 3:
-                return <Album returnHome = {this.returnHome}/>
+                return <WorkInProgress returnHome = {this.returnHome}/>
 
             case 4:
-                return <ToDo returnHome = {this.returnHome}/>
+                return <WorkInProgress returnHome = {this.returnHome}/>
     
             case 5:
-                return <Sudoku returnHome = {this.returnHome}/>
+                return <WorkInProgress returnHome = {this.returnHome}/>
     
             case 6:
                 return <FlashCards returnHome = {this.returnHome}/>
 
             case 7:
-                return <Radio returnHome = {this.returnHome}/>
+                return <WorkInProgress returnHome = {this.returnHome}/>
 
             case 8:
                 return (
@@ -62,7 +63,7 @@ export class Main extends Component {
                 )
         
             case 9:
-                return <Chat returnHome = {this.returnHome}/>
+                return <WorkInProgress returnHome = {this.returnHome}/>
         
             default:
                 return <Error returnHome = {this.returnHome}/>

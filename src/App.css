@@ -562,3 +562,41 @@ body{
 .album .column{
   flex: 25%;
 }
+
+.home-button{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 13px;
+  cursor: pointer;
+  background-color: #793044;
+  border: none;
+}
+
+.home-button:hover, .home-button:active{
+  background-color: #F23054;
+}
+
+.home-button img{
+  height: 54px;
+  align-self: center;
+  margin: 2px;
+}
+
+.work-in-progress{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2C3C4D;
+  padding: 50px;
+  border-radius: 13px;
+}
+
+.work-in-progress h3{
+  font-size: 50px;
+  font-family: Monsterrat;
+  color: #fff;
+}
