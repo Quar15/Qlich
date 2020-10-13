@@ -5,7 +5,6 @@ import Radio from "./Radio";
 import Error from "./Error";
 import Album from "./Album";
 import FlashCards from './FlashCards';
-import WorkInProgress from "./WorkInProgress";
 import ToDo from "./ToDo";
 import Sudoku from "./Sudoku";
 
