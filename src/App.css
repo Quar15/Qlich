@@ -12,7 +12,7 @@ body{
   max-height: 100vh;
   background-color: #263341;
   color: #5B6570;
-  font-family: Monsterrat, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .line{
@@ -73,7 +73,7 @@ body{
 }
 
 .main-menu .my-button p{
-  font-family: Monsterrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
   color: #eee;
   font-size: 15px;
@@ -480,7 +480,7 @@ body{
   padding: 20px;
   margin: 20px 5px;
   color: #eee;
-  font-family: Monsterrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
@@ -508,7 +508,7 @@ body{
   width: 340px;
   height: 200px;
   color: #eee;
-  font-family: Monsterrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 25px;
 }
@@ -618,6 +618,6 @@ body{
 
 .work-in-progress h3{
   font-size: 50px;
-  font-family: Monsterrat;
+  font-family: Montserrat, sans-serif;
   color: #fff;
 }
