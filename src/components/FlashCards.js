@@ -49,10 +49,17 @@ export class FlashCards extends Component {
         }
     }
 
+    goHome = ()=>{
+        this.props.returnHome();
+    }
+
     render() {
         return (
             <div>
                 <div className="line"></div>
+                <button className="home-button" onClick={e => this.goHome()}>
+                    <img src="./img/home.png" alt=""/>
+                </button>
                 <div className="wrapper-middle">
                     <button className="flash-card" onClick={this.nextWord}>
                         <div className="card wrapper-middle">

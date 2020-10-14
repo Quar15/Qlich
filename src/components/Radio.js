@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
 
 export class Radio extends Component {
+
+    goHome = ()=>{
+        this.props.returnHome();
+    }
+
     render() {
         return (
             <div>
                 <div className="line">
                 </div>
+                <button className="home-button" onClick={e => this.goHome()}>
+                    <img src="./img/home.png" alt=""/>
+                </button>
                     <div className="wrapper">
                         <div className="welcome-header">
                             <h2>Hello</h2>
