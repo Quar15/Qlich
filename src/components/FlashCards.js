@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+const fs = require("fs");
 
 export class FlashCards extends Component {
 
@@ -143,6 +144,20 @@ export class FlashCards extends Component {
         }
     }
 
+    readFile = ()=>{
+        fs.readFile('./temp/test.txt', 'utf8', function (err,data) {
+            if (err) {
+              return console.log(err);
+            }
+            console.log(data);
+            var newWords = [["banana", "banan"]]
+            this.setState({
+                wordIndex: 0,
+                words: newWords
+            })
+          });
+    }
+
     goHome = ()=>{
         this.props.returnHome();
     }
@@ -168,6 +183,7 @@ export class FlashCards extends Component {
                         </div>
                     </button>
                 </div>
+                <button className="" onClick={this.readFile}></button>
             </div>
         )
     }

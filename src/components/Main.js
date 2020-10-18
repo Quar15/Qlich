@@ -12,15 +12,17 @@ import WorkInProgress from "./WorkInProgress";
 export class Main extends Component {
 
     state = {
-        pageIndex: 0,
+        pageIndex: 0, // holds current page
     }
 
+    /* Change page index to specified index */
     changePageIndex = id =>{
         this.setState({
             pageIndex: id
         })
     }
 
+    /* Route for home (pageIndex == 0) */
     returnHome = ()=>{
         this.setState({
             pageIndex: 0
@@ -30,6 +32,7 @@ export class Main extends Component {
 
     render() {
         const { pageIndex } = this.state;
+
         switch (pageIndex) {
             case 0:
                 return (
