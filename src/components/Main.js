@@ -29,7 +29,6 @@ export class Main extends Component {
         })
     }
 
-
     render() {
         const { pageIndex } = this.state;
 

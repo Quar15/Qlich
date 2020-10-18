@@ -554,6 +554,13 @@ body{
   transform: perspective(600px) rotateY(0deg);
 }
 
+.flash-card-input{
+  margin: auto;
+  align-self: center;
+  position: absolute;
+  top: 150px;
+}
+
 .album .row{
   display: flex;
   flex-wrap: wrap;
