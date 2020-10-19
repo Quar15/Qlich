@@ -40,7 +40,7 @@ export class FlashCards extends Component {
           var newWords = [];
           var data = text.split('\n');
           for(var i=0; i<data.length; i++){
-              let word = data[i].split(" \u0096 ");
+              let word = data[i].split(" – ");
               newWords.push(word);
               console.log(word);
           }
@@ -53,7 +53,7 @@ export class FlashCards extends Component {
         };
 
         // Read from file as text coded in "ISO-8859-2"
-        reader.readAsText(e.target.files[0], "ISO-8859-2");
+        reader.readAsText(e.target.files[0], "utf-8");
       }
 
     goHome = ()=>{
