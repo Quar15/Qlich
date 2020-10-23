@@ -5,7 +5,7 @@ import Radio from "./Radio";
 import Error from "./Error";
 import Album from "./Album";
 import FlashCards from './FlashCards';
-import ToDo from "./ToDo";
+import ToDoList from "./ToDo/ToDoList";
 import Sudoku from "./Sudoku";
 import WorkInProgress from "./WorkInProgress";
 
@@ -48,7 +48,7 @@ export class Main extends Component {
                 return <Album returnHome = {this.returnHome}/>
 
             case 4:
-                return <ToDo returnHome = {this.returnHome}/>
+                return <ToDoList returnHome = {this.returnHome}/>
     
             case 5:
                 return <Sudoku returnHome = {this.returnHome}/>
